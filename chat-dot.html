@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>채팅어플 - 채팅(Dot)</title>
+</head>
+
+<body id="chat-screen">
+  <div class="status-bar">
+    <div class="status-bar__inner">
+      <span>서비스 안 됨</span>
+      <i class="fas fa-wifi"></i>
+    </div>
+    <div class="status-bar__inner">
+      <span>22:51</span>
+    </div>
+    <div class="status-bar__inner">
+      <span>51%</span>
+      <i class="fas fa-battery-half fa-lg"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+  </div>
+  <header class="alt-header">
+    <div class="alt-header__column">
+      <a href="chats.html">
+        <i class="fas fa-angle-left fa-3x"></i>
+      </a>
+    </div>
+    <div class="alt-header__column">
+      <h1 class="alt-header__title">Dot</h1>
+    </div>
+    <div class="alt-header__column">
+      <span><i class="fas fa-search fa-lg"></i></span>
+      <span><i class="fas fa-bars fa-lg"></i></span>
+    </div>
+  </header>
+
+  <main class="main-screen main-chat">
+    <div class="chat__timestamp">
+      2022. 05. 22. 일
+    </div>
+
+    <div class="message-row">
+      <img
+        src="data:image/png;base64,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" />
+      <div class="message-row__content">
+        <span class="message__author">Dot</span>
+        <div class="message__info">
+          <span class="message__bubble">I'm Dot</span>
+          <span class="message__time">22:41</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <form class="reply">
+    <div class="reply__column">
+      <i class="far fa-plus-square fa-lg"></i>
+    </div>
+    <div class="reply__column">
+      <input type="text" placeholder="메시지를 입력하시오" />
+      <i class="far fa-smile-wink fa-lg"></i>
+      <button>
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </form>
+
+  <div id="no-mobile">
+    <span>모바일 화면으로 들어오세요</span>
+  </div>
+
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

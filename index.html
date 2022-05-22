@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>채팅 어플</title>
+</head>
+
+<body>
+  <div class="status-bar">
+    <div class="status-bar__inner">
+      <span>서비스 안 됨</span>
+      <i class="fas fa-wifi"></i>
+    </div>
+    <div class="status-bar__inner">
+      <span>22:51</span>
+    </div>
+    <div class="status-bar__inner">
+      <span>51%</span>
+      <i class="fas fa-battery-half fa-lg"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+  </div>
+
+  <header class="login-header">
+    <h1 class="login-header__title">채팅 어플 로그인</h1>
+    <p class="login-header__text">
+      로그인 또는 회원가입 해주세요.
+    </p>
+  </header>
+
+  <form action="friends.html" method="get" id="login-form">
+    <input name="username" type="text" placeholder="이메일 또는 휴대폰 번호" />
+    <input name="password" type="password" placeholder="Password" />
+    <input type="submit" value="Log In" />
+    <a href="#">계정을 잊어 버렸나요?</a>
+  </form>
+
+  <div id="no-mobile">
+    <span>모바일 화면으로 들어오세요</span>
+  </div>
+
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

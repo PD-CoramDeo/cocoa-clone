@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>채팅어플 - 채팅(Broccoli)</title>
+</head>
+
+<body id="chat-screen">
+  <div class="status-bar">
+    <div class="status-bar__inner">
+      <span>서비스 안 됨</span>
+      <i class="fas fa-wifi"></i>
+    </div>
+    <div class="status-bar__inner">
+      <span>22:51</span>
+    </div>
+    <div class="status-bar__inner">
+      <span>51%</span>
+      <i class="fas fa-battery-half fa-lg"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+  </div>
+  <header class="alt-header">
+    <div class="alt-header__column">
+      <a href="chats.html">
+        <i class="fas fa-angle-left fa-3x"></i>
+      </a>
+    </div>
+    <div class="alt-header__column">
+      <h1 class="alt-header__title">Broccoli</h1>
+    </div>
+    <div class="alt-header__column">
+      <span><i class="fas fa-search fa-lg"></i></span>
+      <span><i class="fas fa-bars fa-lg"></i></span>
+    </div>
+  </header>
+
+  <main class="main-screen main-chat">
+    <div class="chat__timestamp">
+      2022. 05. 22. 일
+    </div>
+
+    <div class="message-row">
+      <img
+        src="data:image/png;base64,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" />
+      <div class="message-row__content">
+        <span class="message__author">Broccoli</span>
+        <div class="message__info">
+          <span class="message__bubble">Broccoli, even you</span>
+          <span class="message__time">22:08</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <form class="reply">
+    <div class="reply__column">
+      <i class="far fa-plus-square fa-lg"></i>
+    </div>
+    <div class="reply__column">
+      <input type="text" placeholder="메시지를 입력하시오" />
+      <i class="far fa-smile-wink fa-lg"></i>
+      <button>
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </form>
+
+  <div id="no-mobile">
+    <span>모바일 화면으로 들어오세요</span>
+  </div>
+
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

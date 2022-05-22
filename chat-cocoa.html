@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>채팅어플 - 채팅(Cocoa)</title>
+</head>
+
+<body id="chat-screen">
+  <div class="status-bar">
+    <div class="status-bar__inner">
+      <span>서비스 안 됨</span>
+      <i class="fas fa-wifi"></i>
+    </div>
+    <div class="status-bar__inner">
+      <span>22:51</span>
+    </div>
+    <div class="status-bar__inner">
+      <span>51%</span>
+      <i class="fas fa-battery-half fa-lg"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+  </div>
+  <header class="alt-header">
+    <div class="alt-header__column">
+      <a href="chats.html">
+        <i class="fas fa-angle-left fa-3x"></i>
+      </a>
+    </div>
+    <div class="alt-header__column">
+      <h1 class="alt-header__title">Cocoa</h1>
+    </div>
+    <div class="alt-header__column">
+      <span><i class="fas fa-search fa-lg"></i></span>
+      <span><i class="fas fa-bars fa-lg"></i></span>
+    </div>
+  </header>
+
+  <main class="main-screen main-chat">
+    <div class="chat__timestamp">
+      2022. 05. 22. 일
+    </div>
+
+    <div class="message-row">
+      <img
+        src="data:image/jpeg;base64,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" />
+      <div class="message-row__content">
+        <span class="message__author">Cocoa</span>
+        <div class="message__info">
+          <span class="message__bubble">To Never, Cocoa</span>
+          <span class="message__time">22:49</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <form class="reply">
+    <div class="reply__column">
+      <i class="far fa-plus-square fa-lg"></i>
+    </div>
+    <div class="reply__column">
+      <input type="text" placeholder="메시지를 입력하시오" />
+      <i class="far fa-smile-wink fa-lg"></i>
+      <button>
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </form>
+
+  <div id="no-mobile">
+    <span>모바일 화면으로 들어오세요</span>
+  </div>
+
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

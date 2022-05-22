@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>채팅어플 - 채팅(Never)</title>
+</head>
+
+<body id="chat-screen">
+  <div class="status-bar">
+    <div class="status-bar__inner">
+      <span>서비스 안 됨</span>
+      <i class="fas fa-wifi"></i>
+    </div>
+    <div class="status-bar__inner">
+      <span>22:51</span>
+    </div>
+    <div class="status-bar__inner">
+      <span>51%</span>
+      <i class="fas fa-battery-half fa-lg"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+  </div>
+  <header class="alt-header">
+    <div class="alt-header__column">
+      <a href="chats.html">
+        <i class="fas fa-angle-left fa-3x"></i>
+      </a>
+    </div>
+    <div class="alt-header__column">
+      <h1 class="alt-header__title">Never</h1>
+    </div>
+    <div class="alt-header__column">
+      <span><i class="fas fa-search fa-lg"></i></span>
+      <span><i class="fas fa-bars fa-lg"></i></span>
+    </div>
+  </header>
+
+  <main class="main-screen main-chat">
+    <div class="chat__timestamp">
+      2022. 05. 22. 일
+    </div>
+
+    <div class="message-row">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAAC6CAMAAAAu0KfDAAAAhFBMVEX///8AvxgAvADx/PXG79DJ9N32/fhm03gpzV2y6sGh4KRl1X7p/PQAuQDM+eqE14e06LzU89wVwCL5///g9+koyUmN3JdV0XA0zmF11oKY4afB7MmB2YwPwzBPzV+k4qs+ylR935xn2YkyxTvO79O99+Oi6Lk/x0mq5bQVxjxUzmbb9OEFM+QhAAADJUlEQVR4nO3d63KiQBCG4emG6BplVxF1PbPRRBPu//5WtjRl4qCDiXZ37ff+TAF5ipoaKDk5hxBCCCGEEELov6jfiKRq9L/gbvS6w9EPoX6PJ9Ps2h0ez+YJi7ZYXoXvzObMJNsO36ovj3JxeBnzn9pyFfCy5KmmfKFFvtvxy1r0oR458WpdQx6vFNGJZ41geV/TTi8L3+3FQBedh8EH1qkuOXEehY6XiTI6UehBtTHTRueHUHpTGz2JzdIZdIFAlwh0iUCXCHSJQJcIdIlAlwh0iUCXCHSJQH/fXFXftPzt6PzU9pf7V+ZRxfIh10++mR51/PXm3rWT54rlX5K70ytXX/rpPysWbymiR2Pf6iborrfxrG+D7rZ26f3R6QaM0H3Xuq3QPRfSzNBPL0eZobvs80HVDt11U7N09+nAZIne/3hgskR3sV26Gx6jbNGz41NxW3QXH526G6O7R7v06O19S9borrBLd5MDzB7dHU7dDdKL/X2HBuluSWbp+61ZpLtsZZbuWmyW7srtGaVnA7ZKd1279P6QrdJ3p+5m6W7KBuhT/y3+42f99F8T75+jqvu4NdFrPRWii56MOlbpzP4hY4FOFPqf9NF5bpZOPDJLJ9qapfOmZ5VO3Ax9CkodnTh0yOijU1KYpfNr2JBRSCeemaUTdc3Sw2ZIlfSwGVInnULOIbXS6fKQUUonzs3Sicdm6ZReOiHQS+f8wgmBXjpx+/y7FxTTiV/M0ik5+xYA1XTenDuoqqaff+eFbjrNp2bpnFcPd+X0czOkdjollTOkAP3R37LqAYZlxQreu91vSq98bKTu8vd/zOSugS4R6BKBLhHoEoEuEegSgS4R6BKBLhHoEoEuEegShb/sNuS3tLsWvNfVvQicOPC2IOe6AT++3rPQu4J2rVNdu53Hwe+O978mRS4+cz3nZMSkl7d3v/itxodBdE2PadCNWId60tyjaoz0f8VqJhkeBE8v+6ZKPmfCg5rw0r5QgOd0Vnefl2WTTSKpLy+RNVtXfu+p2LZfq6+83bo0H65rPbDysUaUPQhVRNFXvrCFEEIIIYQQQshMfwFYK3hQK3sZ4QAAAABJRU5ErkJggg==" />
+      <div class="message-row__content">
+        <span class="message__author">Never</span>
+        <div class="message__info">
+          <span class="message__bubble">Hi</span>
+          <span class="message__time">22:49</span>
+        </div>
+      </div>
+    </div>
+    <div class="message-row">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAAC6CAMAAAAu0KfDAAAAhFBMVEX///8AvxgAvADx/PXG79DJ9N32/fhm03gpzV2y6sGh4KRl1X7p/PQAuQDM+eqE14e06LzU89wVwCL5///g9+koyUmN3JdV0XA0zmF11oKY4afB7MmB2YwPwzBPzV+k4qs+ylR935xn2YkyxTvO79O99+Oi6Lk/x0mq5bQVxjxUzmbb9OEFM+QhAAADJUlEQVR4nO3d63KiQBCG4emG6BplVxF1PbPRRBPu//5WtjRl4qCDiXZ37ff+TAF5ipoaKDk5hxBCCCGEEELov6jfiKRq9L/gbvS6w9EPoX6PJ9Ps2h0ez+YJi7ZYXoXvzObMJNsO36ovj3JxeBnzn9pyFfCy5KmmfKFFvtvxy1r0oR458WpdQx6vFNGJZ41geV/TTi8L3+3FQBedh8EH1qkuOXEehY6XiTI6UehBtTHTRueHUHpTGz2JzdIZdIFAlwh0iUCXCHSJQJcIdIlAlwh0iUCXCHSJQH/fXFXftPzt6PzU9pf7V+ZRxfIh10++mR51/PXm3rWT54rlX5K70ytXX/rpPysWbymiR2Pf6iborrfxrG+D7rZ26f3R6QaM0H3Xuq3QPRfSzNBPL0eZobvs80HVDt11U7N09+nAZIne/3hgskR3sV26Gx6jbNGz41NxW3QXH526G6O7R7v06O19S9borrBLd5MDzB7dHU7dDdKL/X2HBuluSWbp+61ZpLtsZZbuWmyW7srtGaVnA7ZKd1279P6QrdJ3p+5m6W7KBuhT/y3+42f99F8T75+jqvu4NdFrPRWii56MOlbpzP4hY4FOFPqf9NF5bpZOPDJLJ9qapfOmZ5VO3Ax9CkodnTh0yOijU1KYpfNr2JBRSCeemaUTdc3Sw2ZIlfSwGVInnULOIbXS6fKQUUonzs3Sicdm6ZReOiHQS+f8wgmBXjpx+/y7FxTTiV/M0ik5+xYA1XTenDuoqqaff+eFbjrNp2bpnFcPd+X0czOkdjollTOkAP3R37LqAYZlxQreu91vSq98bKTu8vd/zOSugS4R6BKBLhHoEoEuEegSgS4R6BKBLhHoEoEuEegShb/sNuS3tLsWvNfVvQicOPC2IOe6AT++3rPQu4J2rVNdu53Hwe+O978mRS4+cz3nZMSkl7d3v/itxodBdE2PadCNWId60tyjaoz0f8VqJhkeBE8v+6ZKPmfCg5rw0r5QgOd0Vnefl2WTTSKpLy+RNVtXfu+p2LZfq6+83bo0H65rPbDysUaUPQhVRNFXvrCFEEIIIYQQQshMfwFYK3hQK3sZ4QAAAABJRU5ErkJggg==" />
+      <div class="message-row__content">
+        <span class="message__author">Never</span>
+        <div class="message__info">
+          <span class="message__bubble">I'm Never</span>
+          <span class="message__time">22:50</span>
+        </div>
+      </div>
+    </div>
+    <div class="message-row">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAAC6CAMAAAAu0KfDAAAAhFBMVEX///8AvxgAvADx/PXG79DJ9N32/fhm03gpzV2y6sGh4KRl1X7p/PQAuQDM+eqE14e06LzU89wVwCL5///g9+koyUmN3JdV0XA0zmF11oKY4afB7MmB2YwPwzBPzV+k4qs+ylR935xn2YkyxTvO79O99+Oi6Lk/x0mq5bQVxjxUzmbb9OEFM+QhAAADJUlEQVR4nO3d63KiQBCG4emG6BplVxF1PbPRRBPu//5WtjRl4qCDiXZ37ff+TAF5ipoaKDk5hxBCCCGEEELov6jfiKRq9L/gbvS6w9EPoX6PJ9Ps2h0ez+YJi7ZYXoXvzObMJNsO36ovj3JxeBnzn9pyFfCy5KmmfKFFvtvxy1r0oR458WpdQx6vFNGJZ41geV/TTi8L3+3FQBedh8EH1qkuOXEehY6XiTI6UehBtTHTRueHUHpTGz2JzdIZdIFAlwh0iUCXCHSJQJcIdIlAlwh0iUCXCHSJQH/fXFXftPzt6PzU9pf7V+ZRxfIh10++mR51/PXm3rWT54rlX5K70ytXX/rpPysWbymiR2Pf6iborrfxrG+D7rZ26f3R6QaM0H3Xuq3QPRfSzNBPL0eZobvs80HVDt11U7N09+nAZIne/3hgskR3sV26Gx6jbNGz41NxW3QXH526G6O7R7v06O19S9borrBLd5MDzB7dHU7dDdKL/X2HBuluSWbp+61ZpLtsZZbuWmyW7srtGaVnA7ZKd1279P6QrdJ3p+5m6W7KBuhT/y3+42f99F8T75+jqvu4NdFrPRWii56MOlbpzP4hY4FOFPqf9NF5bpZOPDJLJ9qapfOmZ5VO3Ax9CkodnTh0yOijU1KYpfNr2JBRSCeemaUTdc3Sw2ZIlfSwGVInnULOIbXS6fKQUUonzs3Sicdm6ZReOiHQS+f8wgmBXjpx+/y7FxTTiV/M0ik5+xYA1XTenDuoqqaff+eFbjrNp2bpnFcPd+X0czOkdjollTOkAP3R37LqAYZlxQreu91vSq98bKTu8vd/zOSugS4R6BKBLhHoEoEuEegSgS4R6BKBLhHoEoEuEegShb/sNuS3tLsWvNfVvQicOPC2IOe6AT++3rPQu4J2rVNdu53Hwe+O978mRS4+cz3nZMSkl7d3v/itxodBdE2PadCNWId60tyjaoz0f8VqJhkeBE8v+6ZKPmfCg5rw0r5QgOd0Vnefl2WTTSKpLy+RNVtXfu+p2LZfq6+83bo0H65rPbDysUaUPQhVRNFXvrCFEEIIIYQQQshMfwFYK3hQK3sZ4QAAAABJRU5ErkJggg==" />
+      <div class="message-row__content">
+        <span class="message__author">Never</span>
+        <div class="message__info">
+          <span class="message__bubble">To Cocoa, Never</span>
+          <span class="message__time">22:50</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="message-row message-row--own">
+      <div class="message-row__content">
+        <div class="message__info">
+          <span class="message__bubble">Never Never</span>
+          <span class="message__time">22:51</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <form class="reply">
+    <div class="reply__column">
+      <i class="far fa-plus-square fa-lg"></i>
+    </div>
+    <div class="reply__column">
+      <input type="text" placeholder="메시지를 입력하시오" />
+      <i class="far fa-smile-wink fa-lg"></i>
+      <button>
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </form>
+
+  <div id="no-mobile">
+    <span>모바일 화면으로 들어오세요</span>
+  </div>
+
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
